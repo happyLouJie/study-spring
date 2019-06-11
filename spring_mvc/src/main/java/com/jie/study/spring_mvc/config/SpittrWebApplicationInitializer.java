@@ -9,18 +9,18 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
  * @date: 2019/6/11
  * @Description:
  */
-//public class SpittrWebApplicationInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
-//
-//    protected Class<?>[] getRootConfigClasses() {
-//        return new Class<?>[] {RootConfig.class};
-//    }
-//
-//    protected Class<?>[] getServletConfigClasses() {
-//        return new Class<?>[] {WebConfig.class};
-//    }
-//
-//    protected String[] getServletMappings() {
-//        return new String[] {"/"};
-//    }
-//
-//}
+public class SpittrWebApplicationInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
+
+    protected Class<?>[] getRootConfigClasses() {
+        return new Class<?>[] {RootConfig.class};
+    }
+
+    protected Class<?>[] getServletConfigClasses() {
+        return new Class<?>[] {WebConfig.class};
+    }
+
+    protected String[] getServletMappings() {
+        return new String[] {"/"};
+    }
+
+}
