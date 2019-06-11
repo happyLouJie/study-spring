@@ -4,6 +4,7 @@ import com.jie.study.spring_test.beans.Person;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
@@ -27,6 +28,11 @@ public class TestBeans {
     @Autowired
     Environment environment;
 
+
+    //SpEL  Spring Expression Language
+    @Value("#{house['hello']}")
+    private String house;
+
     @Test
     public void say () {
 
@@ -39,5 +45,10 @@ public class TestBeans {
     public void environment() {
 //        System.out.println(environment.getActiveProfiles()[0]);
         System.out.println(environment.getProperty("spring.profiles.active"));
+    }
+
+    @Test
+    public void spel() {
+        System.out.println(house);
     }
 }

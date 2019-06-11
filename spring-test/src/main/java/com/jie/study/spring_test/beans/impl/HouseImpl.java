@@ -14,8 +14,14 @@ import org.springframework.stereotype.Component;
 @Component("house")
 public class HouseImpl implements House, BeanNameAware {
 
+    public String hello = "HouseImpl";
+
     public void live(String home) {
         System.out.println("we are live in the home:"+home);
+    }
+
+    public String getHouseName() {
+        return "House jie Name";
     }
 
     public void setBeanName(String s) {

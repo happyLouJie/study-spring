@@ -4,4 +4,6 @@ public interface House {
 
     public void live(String home);
 
+    public String getHouseName();
+
 }
