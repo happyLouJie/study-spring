@@ -1,4 +1,4 @@
-package com.jie.study.spring_mvc.controller;
+package com.jie.study.spring_mvc.config;
 
 
 import org.springframework.context.annotation.Bean;
@@ -26,8 +26,8 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     @Bean
     public ViewResolver viewResolver() {
         InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-        resolver.setPrefix("WEB-INF/views");
-        resolver.setSuffix("jsp");
+        resolver.setPrefix("/WEB-INF/views/");
+        resolver.setSuffix(".jsp");
         resolver.setExposeContextBeansAsAttributes(true);
         return resolver;
     }

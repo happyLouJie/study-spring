@@ -1,6 +1,5 @@
 package com.jie.study.spring_mvc.config;
 
-import com.jie.study.spring_mvc.controller.WebConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 /**
